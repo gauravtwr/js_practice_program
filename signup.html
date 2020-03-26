@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="signup-form">
+		<form  action="signup.jsp" name="myform" onsubmit="return validate()">
+			<h1>Sign Up</h1>
+			<!-- <input type="text" placeholder="Full Name" name="username" class="txtb"> -->
+			<input type="email" placeholder="Email" name="email" class="txtb">
+			<input type="password" placeholder="password" name="password" class="txtb"/>
+			<!-- <input type="password" placeholder="Confirm Password" name="password1" class="txtb"> -->
+			<input type="submit" value="regiter" class="signup-btn" />
+	<!-- 		<a href="login.html">Already have one ?</a> -->
+		</form>
+		
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	function validate(){
+		var email = document.myform.email.value;
+		var password = document.myform.password.value;
+
+		if(email=="")
+	{
+		alert("Email is mandatory");
+		return false;
+	}
+	
+	else if(password=="")
+	{
+		alert("password is mandatory");
+		return false;
+	}
+	
+	else
+	{
+		alert("validation succesful");
+		return true;
+	}
+	
+	}
+
+	
+</script>
+
+</html>
