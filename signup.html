@@ -31,12 +31,14 @@
 		if(email=="")
 	{
 		alert("Email is mandatory");
+		document.myform.email.focus();
 		return false;
 	}
 	
 	else if(password=="")
 	{
 		alert("password is mandatory");
+		document.myform.password.focus();
 		return false;
 	}
 	
@@ -47,6 +49,8 @@
 	}
 	
 	}
+
+
 
 	
 </script>

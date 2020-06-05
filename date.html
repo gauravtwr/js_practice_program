@@ -3,6 +3,44 @@
 <head>
 	<title>Date</title>
 
+	<style type="text/css">
+		body
+		{
+			background: #C39BD3;
+		}
+
+		.clock
+		{
+			position: absolute;
+			top: 40%;
+			left: 40%;
+/*			transform: translateX(-10%);
+			transform: translateY(-10%);*/
+			/*color: #fff;*/
+			font-size: 40px;
+		}
+
+		.back
+		{	
+			top: 40%;
+			left: 40%;
+			height: 50px;
+			width: 80px;
+			background-color:  #D6EAF8;
+		}
+	</style>
+
+
+</head>
+<body onload="conticousDisplay()">
+
+	<p class="clock">current Date</p><br/>
+<!-- 	<p id="dateinfo"></p>
+
+ -->	
+ 	<div class="back">
+ 		<div id="dateinfo" class="clock"></div>
+ 	</div>
 
 	<script type="text/javascript">
 		function conticousDisplay(){
@@ -17,13 +55,6 @@
 
 
 	</script>
-
-
-</head>
-<body onload="conticousDisplay()">
-
-	current Date<br/>
-	<p id="dateinfo"></p>
 
 </body>
 </html>
