@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="armstrong">
+		number1: <input type="text" id="input" name="num1">
+		<input type="button" name="armstrong" value="armstrong" onclick="calculate()">
+		
+	</form>
+	<p id="result">
+	</p>
+
+	<script type="text/javascript">
+		
+		function calculate() {
+			var a = Number (document.getElementById("input").value);
+			console.log (a)
+			var add ,rem,flag;
+			flag=a;
+			add=0;
+			while(a>0)
+			{
+				rem = Number(a%10);
+				add = add+rem**3;
+				a=parseInt  (a/10);
+				console.log(a);
+			}
+				console.log(add);
+			
+
+			if (add==flag){
+				document.getElementById('result').innerHTML="number is armstrong"
+				}
+
+				else
+				{
+					document.getElementById('result').innerHTML="number is not armstrong"
+				}
+
+		}
+	</script>
+
+</body>
+</html>

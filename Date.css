@@ -1,0 +1,55 @@
+body
+{
+	background: #C39BD3;
+}
+
+.clock
+{
+	display: flex;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	/*transform: translateX(-10%);*/
+	/*transform: translateY(-10%);*/*/
+	/*color: #fff;*/
+	font-size: 40px;
+}
+.back
+	{	
+	top: 40%;
+	left: 40%;
+	height: 50px;
+	width: 80px;
+	background-color:  #D6EAF8;
+}		
+
+#hour
+{
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 200px;
+	font-weight: bolder;
+	color: #0cf035;
+}
+
+
+#min
+
+{
+
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 200px;
+	font-weight: bolder;
+	color: #0cf035;
+}
+
+
+#sec
+{
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 200px;
+	font-weight: bolder;
+	color: #0cf035;
+}

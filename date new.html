@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Date</title>
+
+	<link rel="stylesheet" type="text/css" href="Date.css">
+
+</head>
+
+<body onload="continuousDisplay()">
+	Current Date:<br/>
+	<!-- <p ></p> -->
+
+<div id="dateinfo" class="clock" onload="continuousDisplay()">
+	<div id="hour">
+		
+	</div>
+	<div id="min">
+		
+	</div>
+	<div id="sec">
+		
+	</div>
+	
+</div>
+
+<script>
+
+		function continuousDisplay(){
+			//setTimeout: once
+			setInterval(displayDate,1000);
+			//clearInterval
+		}
+
+		function displayDate(){
+		var d = new Date();
+
+		var x = d.getHours();
+		var y = d.getMinutes();
+		var z = d.getSeconds();
+		
+		document.getElementById("hour").innerHTML = x;
+		document.getElementById("min").innerHTML = y;
+		document.getElementById("sec").innerHTML = z;
+	}
+	
+	</script>
+
+</body>
+
+</html>
